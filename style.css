@@ -1,0 +1,76 @@
+/* 
+EXERCÍCIO 7 - parte 2:
+Estilizações que devem ser iguais para os 2 arquivos:
+- fonte Verdana
+- cor de fundo cinza
+
+E para o cabeçalho
+- deve ficar fixo enquanto a página for rolada para baixo
+- ter o tamanho horizontal de 100% da largura da página
+- ter a altura de 100px
+- a logo do cabeçalho deverá ficar do lado esquerdo
+- o menu com os links do lado direito
+- todo o conteúdo deve estar centralizado verticalmente
+- a cor do texto dos links do menu brancos
+- os links devem ficar destacados de vermelho quando o usuário passar o mouse sobre eles 
+*/
+
+*{
+  font-family: Verdana, sans-serif;
+}
+
+body{
+  background-color: #ccc;
+}
+
+header{
+  /* deixar ele fixo no topo */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* tamanho */
+  width: 100%;
+  height: 100px;
+
+  /* estilizar os elementos "filhos" dele */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* como o cabeçalho tem um tamanho de 100px e ficará sempre no topo da página, precisamos colocar uma margem superior no main para que ele não fique "escondido" atrá do cabeçalho*/
+main{
+  margin-top: 100px;
+}
+
+/* estilização adicional: para deixar a logo com um tamanho melhor */
+header img{
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* estilização adicional: para deixar a lista de urls (do menu) mais organizado */
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  list-style: none;
+}
+
+/* se estilizarmos apenas a propriedade <a> isso afetaria todos os links da página, então informamos ao CSS em que posição está o link que queremos estilizar */
+header nav a{
+  color: white;
+
+  /* aproveitar para tirar a linha inferior dos lnks */
+  text-decoration: none;
+
+  /* aproveitar para colocar um espaço entre os links */
+  padding: 10px;
+}
+
+/* a propriedade hover altera a tag no momento em que passamos o muse sobre ela */
+header nav a:hover{
+  color: red;
+}

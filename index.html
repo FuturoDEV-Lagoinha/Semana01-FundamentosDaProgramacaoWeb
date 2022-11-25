@@ -15,6 +15,13 @@ O corpo deve conter um título “Home”, um subtítulo  “Semana 01” e um p
   Crie um novo arquivo chamado “style.css” e o conecte nos 2 arquivos html criados anteriormente.
    -->
   <link rel="stylesheet" href="style.css" type="text/css">
+
+  <!--
+    EXERCÍCIO 10 - parte 1:
+    Crie um arquivo “index.js” e o conecte no arquivo index.html.
+   -->
+  <script src="index.js"></script>
+
   <title>FuturoDEV</title>
 </head>
 
@@ -87,8 +94,13 @@ O corpo deve conter um título “Home”, um subtítulo  “Semana 01” e um p
       <label for="mensagem">Mensagem</label>
       <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
-      <!-- como vamos estilizar a margim do botão com css não precisamos mais de <br> acima dele para afstá-lo da mensagem -->
-      <button type="submit">Enviar</button>
+      <!-- 
+        EXERCÍCIO 10 - parte 2: JAVASCRITP
+        Adicione uma função em que, quando o usuário clicar no botão enviar do formulário ele exiba um alerta com a frase: Olá “Nome digitado no input
+      -->
+      <!-- Adicionei um atributo onclick que esperar receber uma função que será "chamada" toda vez que o botão for clicado
+        Essa função estará no arquivo index.js -->
+      <button type="submit" onclick="cumprimentarUsuario()">Enviar</button>
   </main>
 
   <!-- 

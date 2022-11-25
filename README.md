@@ -1,2 +1,9 @@
 # Semana01-FundamentosDaProgramacaoWeb
-Conteúdo ministrado na semana 01 do curso
+
+Conteúdo ministrado na semana 01 do curso.
+
+Ementa:
+- Arquitetura web (cliente-servidor)
+- HTML 5
+- CSS 3
+- Bootstrap 4

@@ -18,7 +18,13 @@ O corpo deve conter um título “Home”, um subtítulo  “Semana 01” e um p
   <title>FuturoDEV</title>
 </head>
 
-<body>
+
+<!-- 
+  EXERCÍCIO 8 - parte 1:
+  Fazer eslizição diferente para cada página.
+  OBS: Por conta disso é preciso adicionar identificadores para cada página.
+ -->
+<body id="home">
   <!-- 
   EXERCÍCIO 6 - parte 1:
   Crie um cabeçalho que contenha:
@@ -67,15 +73,20 @@ O corpo deve conter um título “Home”, um subtítulo  “Semana 01” e um p
     - também deve conter um botão para enviar as informações
      -->
     <form action="">
-      <label for="nome">Nome</label><br>
-      <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+
+      <!-- como adicionamos display flex no css não precisamos mais do <br> pra quebrar linhas entre as labels e inputs -->
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
       <br>
-      <label for="email">Email</label><br>
-      <input type="email" name="email" id="email"><br>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
       <br>
-      <label for="mensagem">Mensagem</label><br>
-      <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
-      <br>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+      <!-- como vamos estilizar a margim do botão com css não precisamos mais de <br> acima dele para afstá-lo da mensagem -->
       <button type="submit">Enviar</button>
   </main>
 

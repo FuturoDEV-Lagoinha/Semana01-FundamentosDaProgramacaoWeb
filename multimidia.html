@@ -24,7 +24,13 @@ Também adicione três imagens:
   <title>FuturoDEV</title>
 </head>
 
-<body>
+<!-- 
+  EXERCÍCIO 8 - parte 2:
+  Fazer eslizição diferente para cada página.
+  OBS: Por conta disso é preciso adicionar identificadores para cada página.
+ -->
+
+<body id="multimidia">
   <!-- 
   EXERCÍCIO 6 - parte 3:
   O mesmo cabeçalho e rodapé deve ser inserido nos 2 arquivos
@@ -66,14 +72,25 @@ Também adicione três imagens:
       Veja o vídeo seguinte para entender um pouco da carreira de desenvolvedor de software.
     </p>
 
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NA4srP35Maw"
-        title="Minha Carreira Teria Sido MUITO Melhor" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bSHPRLgUn6A" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <!-- para estilizar o posicionamento dos vídeos usaremos um identificador na div que os envolvem -->
+    <div id="videos">
+      
+      <!-- também adicionaremos subtítulos em cada vídeo, por isso envolver eles em divs -->
+      <div>
+        <h3>Minha Carreira Teria Sido MUITO Melhor</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NA4srP35Maw"
+          title="Minha Carreira Teria Sido MUITO Melhor" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <h3>As dicas de programação e a história de como um músico virou desenvolvedor front-end</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bSHPRLgUn6A" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
   </main>
 

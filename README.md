@@ -1,4 +1,4 @@
-# Semana01-FundamentosDaProgramacaoWeb
+# Semana 01: Fundamentos Da Programação Web
 
 Conteúdo ministrado na semana 01 do curso.
 
